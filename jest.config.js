@@ -28,7 +28,7 @@ module.exports = {
         //
         // WARNING: ORDER MATTERS
         //
-        '@openland/context-lifetime/(.*)': '<rootDir>/packages/context-lifetime/$1',
-        '@openland/context-lifetime': '<rootDir>/packages/context-lifetime'
+        '@openland/lifetime/(.*)': '<rootDir>/packages/lifetime/$1',
+        '@openland/lifetime': '<rootDir>/packages/lifetime'
     },
 };

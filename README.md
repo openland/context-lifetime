@@ -1,4 +1,4 @@
-# @openland/context-lifetime
+# @openland/lifetime
 
 Helps to manage long-running tasks in context
 

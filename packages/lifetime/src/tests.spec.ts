@@ -2,7 +2,7 @@ import {EmptyContext} from "@openland/context";
 import {delay, delayBreakable, forever} from "./impl/time";
 import {cancelContext, withLifetime} from "./impl/LifetimeContext";
 
-describe('Context-lifetime', () => {
+describe('Lifetime', () => {
     it('should cancel breakable delay on context stop', async () => {
         let ctx = withLifetime(EmptyContext);
         setTimeout(() => cancelContext(ctx), 100);
