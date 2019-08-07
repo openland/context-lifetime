@@ -6,5 +6,9 @@
     "typings": "lib/index.d.ts",
     "repository": "https://github.com/openland/lifetime",
     "author": "Narek Abovyan <narek@openland.com>",
-    "license": "MIT"
+    "license": "MIT",
+    "dependencies": {
+        "@openland/context": "^0.4.0",
+        "@openland/log": "^1.1.1"
+    }
 }

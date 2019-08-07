@@ -5,8 +5,17 @@ import {onContextCancel} from "./LifetimeContext";
 const log = createLogger('backoff');
 const unknownContext = createNamedContext('unknown');
 
+/**
+ * Basic async delay function
+ * @param ms time to delay
+ */
 export const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
+/**
+ * Delay which can be canceled from outer code
+ * @param ctx
+ * @param ms
+ */
 export function delayBreakable(ctx: Context, ms: number) {
     let timer = setTimeout(() => cancel(), ms);
     let resolver: (() => void) = () => {};
@@ -24,6 +33,11 @@ export function exponentialBackoffDelay(currentFailureCount: number, minDelay: n
     return Math.random() * maxDelayRet;
 }
 
+/**
+ * Backoff loop which can be canceled using cancelContext
+ * @param ctx
+ * @param callback
+ */
 export async function backoff<T>(ctx: Context, callback: () => Promise<T>): Promise<T> {
     let working = true;
     onContextCancel(ctx, () => working = false);
@@ -50,6 +64,11 @@ export async function backoff<T>(ctx: Context, callback: () => Promise<T>): Prom
     throw new Error('Context was stopped');
 }
 
+/**
+ * Forever loop which can be canceled using cancelContext
+ * @param ctx
+ * @param callback
+ */
 export function forever(ctx: Context, callback: () => Promise<void>) {
     let working = true;
     onContextCancel(ctx, () => working = false);

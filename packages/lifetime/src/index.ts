@@ -12,3 +12,8 @@ export {
     onContextCancel,
     cancelContext
 } from "./impl/LifetimeContext";
+
+export {
+    DoubleContextCancellationError,
+    ContextAlreadyCancelledError
+} from "./impl/errors";
