@@ -10,7 +10,8 @@ export {
     LifetimeContext,
     withLifetime,
     onContextCancel,
-    cancelContext
+    cancelContext,
+    isContextCancelled
 } from "./impl/LifetimeContext";
 
 export {
