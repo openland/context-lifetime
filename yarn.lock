@@ -762,9 +762,19 @@
     universal-user-agent "^2.0.0"
     url-template "^2.0.8"
 
+"@openland/context@*":
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/@openland/context/-/context-0.5.2.tgz#68100dd17de9782c8e736dc6a9813f5440c08cb1"
+
 "@openland/context@^0.4.0":
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/@openland/context/-/context-0.4.0.tgz#3d12934d9726b5743f9f40521e3d62e81a1f8d0c"
+
+"@openland/log@*":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@openland/log/-/log-1.1.2.tgz#837fd46718a5669f7fa2d8f35b525e2105000b91"
+  dependencies:
+    "@openland/context" "*"
 
 "@openland/log@^1.1.1":
   version "1.1.1"
@@ -2848,8 +2858,8 @@ home-or-tmp@^2.0.0:
     os-tmpdir "^1.0.1"
 
 hosted-git-info@^2.1.4, hosted-git-info@^2.6.0:
-  version "2.7.1"
-  resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.7.1.tgz#97f236977bd6e125408930ff6de3eec6281ec047"
+  version "2.8.9"
+  resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.8.9.tgz#dffc0bf9a21c02209090f2aa69429e1414daf3f9"
 
 html-encoding-sniffer@^1.0.2:
   version "1.0.2"
