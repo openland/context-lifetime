@@ -762,9 +762,19 @@
     universal-user-agent "^2.0.0"
     url-template "^2.0.8"
 
+"@openland/context@*":
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/@openland/context/-/context-0.5.2.tgz#68100dd17de9782c8e736dc6a9813f5440c08cb1"
+
 "@openland/context@^0.4.0":
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/@openland/context/-/context-0.4.0.tgz#3d12934d9726b5743f9f40521e3d62e81a1f8d0c"
+
+"@openland/log@*":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@openland/log/-/log-1.1.2.tgz#837fd46718a5669f7fa2d8f35b525e2105000b91"
+  dependencies:
+    "@openland/context" "*"
 
 "@openland/log@^1.1.1":
   version "1.1.1"
@@ -4856,8 +4866,8 @@ q@^1.5.1:
   resolved "https://registry.yarnpkg.com/q/-/q-1.5.1.tgz#7e32f75b41381291d04611f1bf14109ac00651d7"
 
 qs@~6.5.2:
-  version "6.5.2"
-  resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.2.tgz#cb3ae806e8740444584ef154ce8ee98d403f3e36"
+  version "6.5.3"
+  resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.3.tgz#3aeeffc91967ef6e35c0e488ef46fb296ab76aad"
 
 quick-lru@^1.0.0:
   version "1.1.0"
